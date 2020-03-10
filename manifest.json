@@ -1,0 +1,20 @@
+{
+  "name": "OAuth Tutorial Test",
+  "version": "1.0",
+  "description": "Uses OAuth to connect to Asana API.",
+  "manifest_version": 2,
+  "content_security_policy": "script-src 'self' https://unpkg.com/axios/dist/axios.min.js; object-src 'self'",
+  "browser_action": {
+    "default_title": "Asana report."
+  },
+  "permissions": [
+    "identity",
+	"https://app.asana.com/*"
+  ],
+  "background": {
+    "scripts": [
+      "background.js"
+    ],
+    "persistent": false
+  }
+}

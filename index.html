@@ -1,0 +1,25 @@
+<html>
+   <head>
+     <title>UserInfo Block</title>
+     <style>
+       button {
+         padding: 10px;
+         background-color: #3C79F8;
+         display: inline-block;
+       }
+     </style>
+     <script type="text/javascript" src="oauth.js"></script>    
+   </head>
+   <body>
+     <button id="getUserInfo" disabled>Get User Info</button>
+	   <textarea id="userInfoTextArea" rows="20" cols="250">
+		  Logs:	
+	   </textarea>
+
+     <p id="demo"></p>
+	 
+	 <div style="display: none;" id="accessToken" value=""></div> 
+	 <div style="display: none;" id="refreshToken" value=""></div> 
+	 <div style="display: none;" id="userGid" value=""></div> 
+   </body>
+ </html>
